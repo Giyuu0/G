@@ -1,0 +1,28 @@
+name = "atria-earning-system"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# ---------------------------------------------------------------------------
+# D1 database (free tier). Create with:
+#   npx wrangler d1 create atria-earning-db
+# then paste the returned database_id below.
+# ---------------------------------------------------------------------------
+[[d1_databases]]
+binding = "DB"
+database_name = "atria-earning-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# ---------------------------------------------------------------------------
+# Cron trigger: discovery agents run every hour (24/7), not every minute.
+# ---------------------------------------------------------------------------
+[triggers]
+crons = ["0 * * * *"]
+
+# ---------------------------------------------------------------------------
+# Secrets (NEVER put real values here — set them with `wrangler secret put`):
+#   npx wrangler secret put ATRIA_API_KEY
+#   npx wrangler secret put TELEGRAM_BOT_TOKEN
+#   npx wrangler secret put TELEGRAM_CHAT_ID
+#   npx wrangler secret put GITHUB_TOKEN          (optional, raises GitHub rate limit)
+#   npx wrangler secret put ADMIN_SECRET          (protects manual /api/scan calls)
+# ---------------------------------------------------------------------------
