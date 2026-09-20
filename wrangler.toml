@@ -10,7 +10,7 @@ compatibility_date = "2026-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "atria-earning-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "f9a89b3b-8e57-4fb0-94f3-9fed00d68a40"
 
 # ---------------------------------------------------------------------------
 # Cron trigger: discovery agents run every hour (24/7), not every minute.
