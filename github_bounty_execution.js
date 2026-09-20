@@ -6,8 +6,8 @@
 // reviewed a batch of drafts and trust the output quality.
 // ---------------------------------------------------------------------------
 
-import { callBrain } from "../atria.js";
-import { requestAllocation, reconcileUsage, releaseReservation } from "../treasury.js";
+import { callBrain } from "./atria.js";
+import { requestAllocation, reconcileUsage, releaseReservation } from "./treasury.js";
 
 const SYSTEM_PROMPT = `You are a careful software engineer completing a paid
 GitHub issue bounty. Read the issue description and propose a concrete,
