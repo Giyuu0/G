@@ -1,6 +1,6 @@
-import { discoverGithubBounties } from "./discovery/github_bounties.js";
+import { discoverGithubBounties } from "./github_bounties.js";
 import { scoreOpportunity } from "./scoring.js";
-import { draftBountyFix } from "./execution/github_bounty_execution.js";
+import { draftBountyFix } from "./github_bounty_execution.js";
 import {
   tgSend,
   tgSendWithButtons,
