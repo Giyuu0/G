@@ -26,3 +26,5 @@ crons = ["0 * * * *"]
 #   npx wrangler secret put GITHUB_TOKEN          (optional, raises GitHub rate limit)
 #   npx wrangler secret put ADMIN_SECRET          (protects manual /api/scan calls)
 # ---------------------------------------------------------------------------
+[ai]
+binding = "AI"
